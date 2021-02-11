@@ -9,7 +9,7 @@ from transformers import pipeline
 app = Flask(__name__)
 
 
-nlp = pipeline('question-answering',model='a-ware/xlmroberta-squadv2')
+nlp = pipeline('question-answering',model='YOUR MODEL PATH')
 
 @app.route('/healthz', methods=['GET'], strict_slashes=False)
 def healthz():
